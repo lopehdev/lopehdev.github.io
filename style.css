@@ -548,3 +548,26 @@ footer {
     }
 }
 
+
+    padding: 28px;
+}
+
+.technical-card-content h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.technical-card-content p {
+    color: #aaa;
+}
+
+@media (max-width: 800px) {
+    .technical-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technical-card-content {
+        padding: 22px;
+    }
+}
+
