@@ -212,17 +212,17 @@ a {
 .project-card {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    align-items: stretch;
+    align-items: center;
     border: 1px solid #292929;
     background: #111;
 }
-
 .project-image {
     position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     min-width: 0;
-    min-height: 0;
     overflow: hidden;
-    background: linear-gradient(135deg, #202020, #080808);
+    background: #080808;
 }
 
 .project-image iframe {
