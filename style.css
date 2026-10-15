@@ -562,10 +562,20 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .technical-grid {
-        grid-template-columns: 1fr;
-    }
+  .technical-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 40px;
+    row-gap: 48px;
+}
 
+.technical-card img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-bottom: 1px solid #292929;
+}
     .technical-card-content {
         padding: 22px;
     }
