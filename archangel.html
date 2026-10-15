@@ -74,6 +74,85 @@
                 </p>
             </div>
 
+<div class="technical-section">
+
+    <p class="eyebrow">TECHNICAL BREAKDOWN</p>
+
+    <h2>Enemy AI & Gameplay Systems</h2>
+
+    <p class="technical-intro">
+        A closer look at selected enemy AI and movement systems
+        implemented in Unreal Engine.
+    </p>
+
+    <div class="technical-grid">
+
+        <article class="technical-card">
+            <img
+                src="images/colossus-behavior-tree.png"
+                alt="Colossus enemy AI Behavior Tree in Unreal Engine">
+
+            <div class="technical-card-content">
+                <h3>Colossus AI — Behavior Tree</h3>
+                <p>
+                    A Behavior Tree organizes enemy decision-making,
+                    including player pursuit, target selection and
+                    charge attack behaviour.
+                </p>
+            </div>
+        </article>
+
+        <article class="technical-card">
+            <img
+                src="images/flying-enemy-orbit.png"
+                alt="Blueprint graph calculating flying enemy orbital movement">
+
+            <div class="technical-card-content">
+                <h3>Flying Enemy — Orbital Movement</h3>
+                <p>
+                    Blueprint logic calculates an orbital offset
+                    using trigonometric functions, radius and height
+                    to determine the enemy's desired position.
+                </p>
+            </div>
+        </article>
+
+        <article class="technical-card">
+            <img
+                src="images/flying-enemy-attack.png"
+                alt="Blueprint graph updating flying enemy attack movement">
+
+            <div class="technical-card-content">
+                <h3>Flying Enemy — Attack Movement</h3>
+                <p>
+                    The attack movement updates the swing trajectory
+                    over time, interpolating between positions to
+                    control the enemy's movement during the attack.
+                </p>
+            </div>
+        </article>
+
+        <article class="technical-card">
+            <img
+                src="images/enemy-blueprint.png"
+                alt="Enemy character Blueprint and components in Unreal Engine">
+
+            <div class="technical-card-content">
+                <h3>Enemy Implementation</h3>
+                <p>
+                    The enemy Blueprint brings together character
+                    components, detection logic and gameplay
+                    functionality.
+                </p>
+            </div>
+        </article>
+
+    </div>
+
+</div>
+
+            
+            
             <a href="index.html#projects" class="project-link">
                 ← Back to projects
             </a>
