@@ -503,10 +503,6 @@ footer {
 
 
 
-/* =========================
-   CASE STUDY
-========================= */
-
 .case-study-video {
     position: relative;
     width: 100%;
@@ -542,13 +538,46 @@ footer {
     margin-bottom: 30px;
 }
 
-@media (max-width: 800px) {
-    .case-study-video {
-        margin: 30px 0 50px;
-    }
+
+/* =========================
+   TECHNICAL BREAKDOWN
+========================= */
+
+.technical-section {
+    border-top: 1px solid #292929;
+    margin-top: 80px;
+    padding-top: 60px;
 }
 
+.technical-intro {
+    max-width: 700px;
+    color: #aaa;
+    font-size: 18px;
+    margin: 25px 0 50px;
+}
 
+.technical-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 40px;
+    row-gap: 56px;
+}
+
+.technical-card {
+    min-width: 0;
+    border: 1px solid #292929;
+    background: #111;
+    overflow: hidden;
+}
+
+.technical-card img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 24px auto 0;
+}
+
+.technical-card-content {
     padding: 28px;
 }
 
@@ -561,23 +590,32 @@ footer {
     color: #aaa;
 }
 
-@media (max-width: 800px) {
-  .technical-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 40px;
-    row-gap: 48px;
-}
 
-.technical-card img {
-    display: block;
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    border-bottom: 1px solid #292929;
-}
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+    .case-study-video {
+        margin: 30px 0 50px;
+    }
+
+    .technical-section {
+        margin-top: 50px;
+        padding-top: 40px;
+    }
+
+    .technical-grid {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .technical-card img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
     .technical-card-content {
         padding: 22px;
     }
 }
-
