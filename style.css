@@ -103,7 +103,12 @@ a:focus-visible {
     height: var(--nav-height);
     padding: 0 var(--page-gutter);
     border-bottom: 1px solid rgba(37, 44, 53, 0.78);
-    background: rgba(8, 10, 13, 0.88);
+    background: linear-gradient(
+        to left,
+        rgba(8, 10, 13, 0.97) 0%,
+        rgba(11, 16, 22, 0.96) 48%,
+        rgba(130, 185, 245, 0.3) 100%
+    );
     backdrop-filter: blur(14px);
 }
 
