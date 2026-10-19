@@ -1,6 +1,22 @@
 /* =========================
    RESET
 ========================= */
+:root {
+    --bg-main: #080A0D;
+    --bg-card: #10141A;
+    --bg-elevated: #151B23;
+
+    --accent: #82B9F5;
+    --accent-hover: #A5CEFF;
+
+    --text-primary: #F1F3F6;
+    --text-secondary: #929BA8;
+
+    --border: #252C35;
+
+    --content-width: 1400px;
+    --page-gutter: 7%;
+}
 
 * {
     margin: 0;
