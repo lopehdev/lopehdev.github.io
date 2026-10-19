@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Lopeh | Gameplay Programmer</title>
-
-    <meta name="description"
-          content="Lopeh — Gameplay Programmer and Game Designer specializing in Unreal Engine, C++ and Blueprints.">
-    <meta name="theme-color" content="#080a0d">
+    <meta name="theme-color" content="#080A0D">
+    <meta name="description" content="Lopeh — Gameplay Programmer working with Unreal Engine, C++, Blueprints, enemy AI and combat systems.">
     <meta property="og:title" content="Lopeh | Gameplay Programmer">
-    <meta property="og:description" content="Gameplay programming, enemy AI and combat systems in Unreal Engine.">
+    <meta property="og:description" content="Gameplay Programming and Unreal Engine. Selected work, enemy AI and combat systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lopeh.dev/">
 
-    <link rel="stylesheet" href="style.css?v=hero-layout-2">
+    <title>Lopeh | Gameplay Programmer</title>
+    <link rel="stylesheet" href="style.css?v=identity-refresh">
 </head>
-
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- NAVIGATION -->
     <header class="navbar">
         <a href="#home" class="logo" aria-label="Lopeh home">LOPEH<span>.</span></a>
-
         <nav aria-label="Main navigation">
             <a href="#projects">Projects</a>
             <a href="#about">About</a>
@@ -31,271 +26,137 @@
         </nav>
     </header>
 
-
-    <!-- HERO -->
-    <main>
-
-        <section class="hero" id="home">
+    <main id="main">
+        <section class="hero" id="home" aria-labelledby="hero-title">
             <div class="hero-inner">
                 <div class="hero-content">
+                    <p class="eyebrow"><span class="eyebrow-marker" aria-hidden="true"></span>GAMEPLAY PROGRAMMER <span class="eyebrow-divider">/</span> UNREAL ENGINE</p>
+                    <h1 id="hero-title">Gameplay Programming<br><span>in Unreal Engine.</span></h1>
+                    <p class="hero-description">I build responsive gameplay systems, enemy AI and combat using C++ and Blueprints.</p>
 
-                <p class="eyebrow">
-                    <span class="eyebrow-marker" aria-hidden="true"></span>
-                    GAMEPLAY PROGRAMMER <span class="eyebrow-divider">/</span> UNREAL ENGINE
-                </p>
-
-                <h1>
-                    I build gameplay<br>
-                    <span>systems that feel alive.</span>
-                </h1>
-
-                <p class="hero-description">
-                    I create responsive gameplay, enemy AI and combat systems
-                    with Unreal Engine, C++ and Blueprints.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="button primary">
-                        View Projects
-                    </a>
-
-                    <a href="https://github.com/lopehdev"
-                       class="button secondary"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        GitHub
-                    </a>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button primary">View Projects <span aria-hidden="true">↘</span></a>
+                        <a href="https://github.com/lopehdev" class="button secondary" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                    </div>
                 </div>
 
-                <a class="hero-project-link" href="#projects">
-                    <span class="hero-project-line" aria-hidden="true"></span>
-                    Explore selected work
-                </a>
-                </div>
-
-                <a class="hero-visual" href="https://www.youtube.com/watch?v=xgYM9En0Grg"
-                   target="_blank" rel="noopener noreferrer"
-                   aria-label="Watch Archangel: Demon Rush enemy AI gameplay on YouTube">
-                    <img src="https://img.youtube.com/vi/xgYM9En0Grg/maxresdefault.jpg"
-                         alt="Archangel: Demon Rush enemy AI gameplay"
-                         fetchpriority="high">
+                <a class="hero-visual" href="https://www.youtube.com/watch?v=xgYM9En0Grg" target="_blank" rel="noopener noreferrer" aria-label="Watch Archangel: Demon Rush enemy AI gameplay on YouTube">
+                    <img src="https://img.youtube.com/vi/xgYM9En0Grg/maxresdefault.jpg" alt="Gameplay from Archangel: Demon Rush" fetchpriority="high">
                     <span class="hero-visual-shade" aria-hidden="true"></span>
                     <span class="hero-play" aria-hidden="true"><span></span></span>
                     <span class="hero-visual-caption">
                         <span>FEATURED GAMEPLAY</span>
                         <strong>Archangel: Demon Rush</strong>
                     </span>
-                    <span class="hero-visual-index" aria-hidden="true">01 / 01</span>
+                    <span class="hero-visual-index" aria-hidden="true">01 <i></i> 01</span>
                 </a>
-            </div>
 
+                <div class="specialty-strip" aria-label="Specialties">
+                    <span class="specialty-label">FOCUS</span>
+                    <span>Gameplay Systems</span>
+                    <span>Enemy AI</span>
+                    <span>Combat</span>
+                </div>
+            </div>
         </section>
 
-
-        <!-- PROJECTS -->
-        <section id="projects" class="section">
-
+        <section id="projects" class="section projects-section" aria-labelledby="projects-title">
             <div class="section-heading">
-                <p class="eyebrow">01 — PROJECTS</p>
-
-                <h2>
-                    Featured Work
-                </h2>
+                <p class="eyebrow">01 <span>/</span> SELECTED WORK</p>
+                <h2 id="projects-title">Featured Work</h2>
             </div>
-
 
             <article class="project-card">
-
                 <div class="project-image">
-    <iframe
-        src="https://www.youtube.com/embed/xgYM9En0Grg"
-        title="Archangel: Demon Rush - Enemy AI Showcase"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
-</div>
-                
+                    <iframe
+                        src="https://www.youtube.com/embed/xgYM9En0Grg"
+                        title="Archangel: Demon Rush — Enemy AI Showcase"
+                        loading="lazy"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
                 <div class="project-info">
-
-                    <p class="project-type">
-                        UNREAL ENGINE · GAMEPLAY PROGRAMMING
-                    </p>
-
-                    <h3>
-                        Archangel: Demon Rush
-                    </h3>
-
-                    <p>
-                        Action game developed in Unreal Engine.
-                        My work focuses on gameplay programming,
-                        enemy AI, combat behaviour and gameplay systems.
-                    </p>
-
-                    <div class="tags">
+                    <p class="project-type">UNREAL ENGINE <span>/</span> GAMEPLAY PROGRAMMING</p>
+                    <h3>Archangel: Demon Rush</h3>
+                    <p>Gameplay programming for three enemy types: a larva-spitting demon, a charging Colossus and a Demon Bat with orbital movement and a swing attack.</p>
+                    <div class="tags" aria-label="Project technologies">
                         <span>Unreal Engine</span>
-                        <span>C++</span>
                         <span>Blueprints</span>
+                        <span>Animation Blueprints</span>
+                        <span>Behavior Trees</span>
                         <span>AI</span>
                     </div>
-
-                   <a href="archangel.html" class="project-link">
-    View Case Study →
-</a>
-                    
-
+                    <a href="archangel.html" class="project-link">View Case Study <span aria-hidden="true">↗</span></a>
                 </div>
-
             </article>
-
         </section>
 
-
-        <!-- SKILLS -->
-        <section class="section skills-section">
-
+        <section class="section skills-section" aria-labelledby="skills-title">
             <div class="section-heading">
-                <p class="eyebrow">02 — SKILLS</p>
-
-                <h2>
-                    What I Work With
-                </h2>
+                <p class="eyebrow">02 <span>/</span> TOOLKIT</p>
+                <h2 id="skills-title">What I Work With</h2>
             </div>
-
             <div class="skills-grid">
-
-                <div class="skill">
+                <article class="skill">
+                    <span class="skill-index">01</span>
                     <h3>Unreal Engine</h3>
-                    <p>
-                        Gameplay systems, AI, animation,
-                        combat and Blueprint architecture.
-                    </p>
-                </div>
-
-                <div class="skill">
+                    <p>Gameplay systems, AI, animation, combat and Blueprint architecture.</p>
+                </article>
+                <article class="skill">
+                    <span class="skill-index">02</span>
                     <h3>C++</h3>
-                    <p>
-                        Gameplay programming and
-                        object-oriented systems.
-                    </p>
-                </div>
-
-                <div class="skill">
+                    <p>Gameplay programming and object-oriented systems.</p>
+                </article>
+                <article class="skill">
+                    <span class="skill-index">03</span>
                     <h3>Blueprints</h3>
-                    <p>
-                        Rapid gameplay prototyping,
-                        systems and logic.
-                    </p>
-                </div>
-
-                <div class="skill">
+                    <p>Rapid gameplay prototyping, systems and logic.</p>
+                </article>
+                <article class="skill">
+                    <span class="skill-index">04</span>
                     <h3>Game Design</h3>
-                    <p>
-                        Combat, enemy behaviour,
-                        gameplay loops and player experience.
-                    </p>
-                </div>
-
+                    <p>Combat, enemy behaviour, gameplay loops and player experience.</p>
+                </article>
             </div>
-
         </section>
 
-
-        <!-- ABOUT -->
-        <section id="about" class="section about-section">
-
+        <section id="about" class="section about-section" aria-labelledby="about-title">
             <div class="section-heading">
-                <p class="eyebrow">03 — ABOUT</p>
-
-                <h2>
-                    Gameplay first.
-                </h2>
+                <p class="eyebrow">03 <span>/</span> ABOUT</p>
+                <h2 id="about-title">Gameplay first.</h2>
             </div>
-
             <div class="about-content">
-
-                <p>
-                    I'm Lopeh, a game developer focused on
-                    Gameplay Programming and Game Design.
-                </p>
-
-                <p>
-                    I work primarily with Unreal Engine,
-                    C++ and Blueprints, with a particular
-                    interest in gameplay systems, enemy AI
-                    and combat.
-                </p>
-
+                <p class="about-lead">I'm Lopeh, a game developer focused on Gameplay Programming and Game Design.</p>
+                <p>I work primarily with Unreal Engine, C++ and Blueprints, with a particular interest in gameplay systems, enemy AI and combat.</p>
             </div>
-
         </section>
 
-
-        <!-- CONTENT -->
-        <section id="content" class="section content-section">
-
+        <section id="content" class="section content-section" aria-labelledby="content-title">
             <div class="section-heading">
-                <p class="eyebrow">04 — CONTENT</p>
-
-                <h2>
-                    Development & Experiments
-                </h2>
+                <p class="eyebrow">04 <span>/</span> PROCESS</p>
+                <h2 id="content-title">Development &amp; Experiments</h2>
             </div>
-
-            <p class="content-description">
-                I document my development process,
-                Unreal Engine experiments and technical work
-                on YouTube.
-            </p>
-
-            <a href="https://www.youtube.com/@LopehUnrealES"
-               target="_blank"
-               class="button secondary">
-                Visit YouTube →
-            </a>
-
+            <div class="content-panel">
+                <p class="content-description">I document my development process, Unreal Engine experiments and technical work on YouTube.</p>
+                <a href="https://www.youtube.com/@LopehUnrealES" target="_blank" rel="noopener noreferrer" class="button secondary">Visit YouTube <span aria-hidden="true">↗</span></a>
+            </div>
         </section>
 
-
-        <!-- CONTACT -->
-        <section id="contact" class="section contact-section">
-
-            <p class="eyebrow">
-                05 — CONTACT
-            </p>
-
-            <h2>
-                Let's build something.
-            </h2>
-
+        <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+            <p class="eyebrow">05 <span>/</span> CONTACT</p>
+            <h2 id="contact-title">Let's build something.</h2>
             <div class="contact-links">
-
-                <a href="https://github.com/lopehdev"
-                   target="_blank">
-                    GitHub
-                </a>
-
-                <a href="https://www.youtube.com/@LopehUnrealES"
-                   target="_blank">
-                    YouTube
-                </a>
-
+                <a href="https://github.com/lopehdev" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                <a href="https://www.youtube.com/@LopehUnrealES" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
             </div>
-
         </section>
-
     </main>
 
-
-    <!-- FOOTER -->
     <footer>
         <p>© 2026 Lopeh</p>
-
-        <p>
-            Unreal Engine · C++ · Blueprints
-        </p>
+        <p>Unreal Engine <span>/</span> C++ <span>/</span> Blueprints</p>
     </footer>
-
 </body>
 </html>
