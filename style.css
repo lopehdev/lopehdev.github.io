@@ -459,11 +459,12 @@ h3 {
 .projects-section::before {
     z-index: -2;
     background: url("https://img.youtube.com/vi/xgYM9En0Grg/maxresdefault.jpg") center / cover no-repeat;
-    filter: blur(22px) brightness(0.42) saturate(0.72);
+    filter: blur(22px) brightness(0.72) saturate(0.72);
+    opacity: 0.8;
 }
 
 .projects-section::after {
-    background: linear-gradient(180deg, rgba(8, 10, 13, 0.76), rgba(8, 10, 13, 0.88));
+    background: linear-gradient(180deg, rgba(8, 10, 13, 0.42), rgba(8, 10, 13, 0.64));
 }
 
 .project-card {
