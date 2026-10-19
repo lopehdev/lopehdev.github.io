@@ -106,9 +106,9 @@ a:focus-visible {
     border-bottom: 1px solid rgba(37, 44, 53, 0.78);
     background: linear-gradient(
         to right,
-        rgba(8, 10, 13, 0.97) 0%,
-        rgba(11, 16, 22, 0.96) 48%,
-        rgba(91, 130, 172, 0.3) 100%
+        rgba(8, 10, 13, 0.873) 0%,
+        rgba(11, 16, 22, 0.864) 48%,
+        rgba(91, 130, 172, 0.27) 100%
     );
     backdrop-filter: blur(14px);
 }
