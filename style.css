@@ -438,13 +438,16 @@ h3 {
    PROJECTS
 ========================= */
 .projects-section {
-    position: relative;
-    isolation: isolate;
     border-top: 1px solid var(--border);
 }
 
-.projects-section::before,
-.projects-section::after {
+.backdrop-section {
+    position: relative;
+    isolation: isolate;
+}
+
+.backdrop-section::before,
+.backdrop-section::after {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -456,14 +459,14 @@ h3 {
     pointer-events: none;
 }
 
-.projects-section::before {
+.backdrop-section::before {
     z-index: -2;
     background: url("https://img.youtube.com/vi/xgYM9En0Grg/maxresdefault.jpg") center / cover no-repeat;
     filter: blur(22px) brightness(0.72) saturate(0.72);
     opacity: 0.6;
 }
 
-.projects-section::after {
+.backdrop-section::after {
     background: linear-gradient(180deg, rgba(8, 10, 13, 0.42), rgba(8, 10, 13, 0.64));
 }
 
