@@ -104,10 +104,10 @@ a:focus-visible {
     padding: 0 var(--page-gutter);
     border-bottom: 1px solid rgba(37, 44, 53, 0.78);
     background: linear-gradient(
-        to left,
+        to right,
         rgba(8, 10, 13, 0.97) 0%,
         rgba(11, 16, 22, 0.96) 48%,
-        rgba(130, 185, 245, 0.3) 100%
+        rgba(91, 130, 172, 0.3) 100%
     );
     backdrop-filter: blur(14px);
 }
@@ -127,12 +127,12 @@ a:focus-visible {
 .navbar nav {
     display: flex;
     align-items: center;
-    gap: clamp(16px, 3vw, 38px);
+    gap: clamp(19px, 3.6vw, 46px);
 }
 
 .navbar nav a {
     color: var(--text-secondary);
-    font-size: 12px;
+    font-size: 14.4px;
     letter-spacing: 0.04em;
     transition: color 180ms ease;
 }
@@ -840,11 +840,11 @@ footer span {
     }
 
     .navbar nav {
-        gap: 14px;
+        gap: 17px;
     }
 
     .navbar nav a {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .hero {
@@ -969,11 +969,11 @@ footer span {
     }
 
     .navbar nav {
-        gap: 9px;
+        gap: 11px;
     }
 
     .navbar nav a {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .hero h1 {
