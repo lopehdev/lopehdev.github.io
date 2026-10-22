@@ -5,6 +5,7 @@
     --bg-main: #080A0D;
     --bg-card: #10141A;
     --bg-raised: #151B23;
+    --panel-fill: rgba(16, 20, 26, 0.78);
     --text-primary: #F1F3F6;
     --text-secondary: #929BA8;
     --text-navigation: #A0A8B4;
@@ -619,7 +620,7 @@ h3 {
     min-height: 130px;
     padding: 20px 16px;
     border: 1px solid var(--border);
-    background: rgba(8, 10, 13, 0.72);
+    background: var(--panel-fill);
     transition: background-color 180ms ease;
 }
 
@@ -629,7 +630,8 @@ h3 {
 }
 
 .skill:hover {
-    background: var(--bg-card);
+    border-color: rgba(130, 185, 245, 0.42);
+    background: rgba(16, 20, 26, 0.94);
 }
 
 .skill-index {
@@ -681,17 +683,16 @@ h3 {
 
 .skill-list {
     display: grid;
-    gap: var(--space-2);
-    margin: 0;
-    padding: 12px 14px;
-    border-radius: 5px;
-    background: rgba(21, 27, 35, 0.86);
+    gap: 0;
+    margin: var(--space-3) 0 0;
+    padding: 0;
     list-style: none;
 }
 
 .skill-list li {
     position: relative;
-    padding-left: 26px;
+    padding: 9px 0 9px 26px;
+    border-top: 1px solid rgba(146, 155, 168, 0.14);
     color: var(--text-primary);
     font-size: 14px;
 }
@@ -720,7 +721,10 @@ h3 {
 
 .about-content {
     max-width: 650px;
-    padding-top: 6px;
+    align-self: start;
+    padding: clamp(20px, 3vw, 32px);
+    border: 1px solid var(--border);
+    background: var(--panel-fill);
 }
 
 .about-content p {
@@ -752,7 +756,7 @@ h3 {
     gap: var(--space-5);
     padding: clamp(24px, 4vw, 40px);
     border: 1px solid var(--border);
-    background: linear-gradient(115deg, rgba(16, 20, 26, 0.92), rgba(16, 20, 26, 0.48));
+    background: var(--panel-fill);
 }
 
 .content-description {
@@ -794,15 +798,17 @@ h3 {
     display: inline-flex;
     align-items: center;
     gap: 9px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--border);
+    padding: 11px 16px;
+    border: 1px solid var(--border);
+    background: var(--panel-fill);
     color: var(--text-secondary);
     font-size: 12px;
-    transition: border-color 180ms ease, color 180ms ease;
+    transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
 }
 
 .contact-links a:hover {
-    border-color: var(--accent);
+    border-color: rgba(130, 185, 245, 0.65);
+    background: rgba(130, 185, 245, 0.07);
     color: var(--text-primary);
 }
 
