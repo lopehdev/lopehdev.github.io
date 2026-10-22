@@ -676,35 +676,6 @@ h3 {
     line-height: 1.75;
 }
 
-.skill-feature .skill-summary {
-    max-width: none;
-    margin: var(--space-2) 0;
-}
-
-.skill-list {
-    display: grid;
-    gap: 0;
-    margin: var(--space-3) 0 0;
-    padding: 0;
-    list-style: none;
-}
-
-.skill-list li {
-    position: relative;
-    padding: 9px 0 9px 26px;
-    border-top: 1px solid rgba(146, 155, 168, 0.14);
-    color: var(--text-primary);
-    font-size: 14px;
-}
-
-.skill-list li::before {
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    content: "✓";
-    font-weight: 700;
-}
-
 /* =========================
    ABOUT
 ========================= */
