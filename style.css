@@ -1429,3 +1429,12 @@ footer span {
         text-align: left;
     }
 }
+
+.language-switcher .language-flag {
+    display: block;
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+    flex: 0 0 auto;
+}
+
