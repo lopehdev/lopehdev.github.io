@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#080A0D">
-    <meta name="description" content="Lopeh — Gameplay Programmer working with Unreal Engine, C++, Blueprints, enemy AI and combat systems.">
-    <meta property="og:title" content="Lopeh | Gameplay Programmer">
-    <meta property="og:description" content="Gameplay Programming and Unreal Engine. Selected work, enemy AI and combat systems.">
+    <meta name="description" content="Lopeh — Gameplay Programmer working with Unreal Engine, C++, Blueprints, enemy AI and combat systems." data-i18n-content="homeMetaDescription">
+    <meta property="og:title" content="Lopeh | Gameplay Programmer" data-i18n-content="homeTitle">
+    <meta property="og:description" content="Gameplay Programming and Unreal Engine. Selected work, enemy AI and combat systems." data-i18n-content="homeMetaDescription">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lopeh.dev/">
 
-    <title>Lopeh | Gameplay Programmer</title>
-    <link rel="stylesheet" href="style.css?v=toolkit-layout-5">
+    <title data-i18n="homeTitle">Lopeh | Gameplay Programmer</title>
+    <link rel="stylesheet" href="style.css?v=toolkit-layout-6">
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
     <header class="navbar">
-        <a href="#home" class="logo" aria-label="Lopeh home">LOPEH<span>.</span></a>
-        <nav aria-label="Main navigation">
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#content">Content</a>
-            <a href="#contact">Contact</a>
+        <a href="#home" class="logo" aria-label="Lopeh home" data-i18n-aria-label="homeLabel">LOPEH<span>.</span></a>
+        <nav aria-label="Main navigation" data-i18n-aria-label="navLabel">
+            <a href="#projects" data-i18n="navProjects">Projects</a>
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#content" data-i18n="navContent">Content</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
+        <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="languageLabel">
+            <button type="button" data-set-language="en" aria-label="English" aria-pressed="true"><span class="language-flag" aria-hidden="true">🇬🇧</span><span>EN</span></button>
+            <button type="button" data-set-language="es" aria-label="Español" aria-pressed="false"><span class="language-flag" aria-hidden="true">🇲🇽</span><span>ES</span></button>
+        </div>
     </header>
 
     <main id="main">
@@ -37,20 +41,20 @@
             </div>
             <div class="hero-inner">
                 <div class="hero-content">
-                    <p class="eyebrow"><span class="eyebrow-marker" aria-hidden="true"></span>GAMEPLAY PROGRAMMER <span class="eyebrow-divider">/</span> UNREAL ENGINE</p>
+                    <p class="eyebrow"><span class="eyebrow-marker" aria-hidden="true"></span><span data-i18n="heroEyebrow">GAMEPLAY PROGRAMMER <span class="eyebrow-divider">/</span> UNREAL ENGINE</span></p>
                     <h1 id="hero-title"><span class="hero-name">Lopeh</span><span class="hero-unreal">Unreal</span></h1>
-                    <p class="hero-subtitle">VIDEO GAME DEVELOPMENT</p>
-                    <p class="hero-description">Gameplay programming, enemy AI and combat systems built with Unreal Engine.</p>
+                    <p class="hero-subtitle" data-i18n="heroSubtitle">VIDEO GAME DEVELOPMENT</p>
+                    <p class="hero-description" data-i18n="heroDescription">Gameplay programming, enemy AI and combat systems built with Unreal Engine.</p>
 
-                    <div class="specialty-strip" aria-label="Specialties">
-                        <span class="specialty-label">FOCUS</span>
-                        <span>Gameplay Systems</span>
+                    <div class="specialty-strip" aria-label="Specialties" data-i18n-aria-label="specialtiesLabel">
+                        <span class="specialty-label" data-i18n="focus">FOCUS</span>
+                        <span data-i18n="gameplaySystems">Gameplay Systems</span>
                         <span>Enemy AI</span>
                         <span>Combat</span>
                     </div>
 
                     <div class="hero-buttons">
-                        <a href="#projects" class="button primary">View Projects <span aria-hidden="true">↘</span></a>
+                        <a href="#projects" class="button primary"><span data-i18n="viewProjects">View Projects</span> <span aria-hidden="true">↘</span></a>
                         <a href="https://github.com/lopehdev" class="button secondary" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
@@ -59,8 +63,8 @@
 
         <section id="projects" class="section projects-section backdrop-section" aria-labelledby="projects-title">
             <div class="section-heading">
-                <p class="eyebrow">01 <span>/</span> SELECTED WORK</p>
-                <h2 id="projects-title">Featured Work</h2>
+                <p class="eyebrow">01 <span>/</span> <span data-i18n="selectedWork">SELECTED WORK</span></p>
+                <h2 id="projects-title" data-i18n="featuredWork">Featured Work</h2>
             </div>
 
             <article class="project-card">
@@ -68,6 +72,7 @@
                     <iframe
                         src="https://www.youtube.com/embed/xgYM9En0Grg"
                         title="Archangel: Demon Rush — Enemy AI Showcase"
+                        data-i18n-title="showcaseVideoTitle"
                         loading="lazy"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin"
@@ -75,27 +80,27 @@
                     </iframe>
                 </div>
                 <div class="project-info">
-                    <p class="project-type">UNREAL ENGINE <span>/</span> GAMEPLAY PROGRAMMING</p>
+                    <p class="project-type"><span data-i18n="projectType">UNREAL ENGINE <span>/</span> GAMEPLAY PROGRAMMING</span></p>
                     <h3>Archangel: Demon Rush</h3>
-                    <p>Gameplay programming for three enemy types: a larva-spitting demon, a charging Colossus and a Demon Bat with orbital movement and a swing attack.</p>
-                    <div class="tags" aria-label="Project technologies">
+                    <p data-i18n="projectDescription">Gameplay programming for three enemy types: a larva-spitting demon, a charging Colossus and a Demon Bat with orbital movement and a swing attack.</p>
+                    <div class="tags" aria-label="Project technologies" data-i18n-aria-label="projectTechnologies">
                         <span>Unreal Engine</span>
                         <span>Blueprints</span>
                         <span>Animation Blueprints</span>
-                        <span>Behavior Trees</span>
+                        <span data-i18n="behaviorTrees">Behavior Trees</span>
                         <span>AI</span>
                     </div>
-                    <a href="archangel.html" class="project-link">View Case Study <span aria-hidden="true">↗</span></a>
+                    <a href="archangel.html" class="project-link"><span data-i18n="viewCaseStudy">View Case Study</span> <span aria-hidden="true">↗</span></a>
                 </div>
             </article>
         </section>
 
         <section class="section skills-section backdrop-section" aria-labelledby="skills-title">
             <div class="section-heading toolkit-heading">
-                <p class="eyebrow">02 <span>/</span> TOOLKIT</p>
-                <p class="toolkit-meta">GAMEPLAY DEVELOPMENT</p>
-                <h2 id="skills-title">What I Work With</h2>
-                <p class="toolkit-intro">Tools and systems I use to build gameplay experiences.</p>
+                <p class="eyebrow">02 <span>/</span> <span data-i18n="toolkit">TOOLKIT</span></p>
+                <p class="toolkit-meta" data-i18n="gameplayDevelopment">GAMEPLAY DEVELOPMENT</p>
+                <h2 id="skills-title" data-i18n="toolkitTitle">What I Work With</h2>
+                <p class="toolkit-intro" data-i18n="toolkitIntro">Tools and systems I use to build gameplay experiences.</p>
             </div>
             <div class="skills-grid">
                 <article class="skill skill-feature">
@@ -103,61 +108,61 @@
                         <h3>Unreal Engine</h3>
                         <span class="skill-arrow" aria-hidden="true">↗</span>
                     </div>
-                    <p>Gameplay systems, enemy AI, animation, Blueprints, Gameplay Ability System (GAS), materials and level design.</p>
+                    <p data-i18n="unrealSummary">Gameplay systems, enemy AI, animation, Blueprints, Gameplay Ability System (GAS), materials and level design.</p>
                 </article>
                 <article class="skill">
-                    <span class="skill-index">01 / LANGUAGE</span>
+                    <span class="skill-index" data-i18n="language">01 / LANGUAGE</span>
                     <h3>C++</h3>
-                    <p>Gameplay programming and object-oriented systems.</p>
+                    <p data-i18n="cppDescription">Gameplay programming and object-oriented systems.</p>
                 </article>
                 <article class="skill">
-                    <span class="skill-index">02 / VISUAL SCRIPTING</span>
+                    <span class="skill-index" data-i18n="visualScripting">02 / VISUAL SCRIPTING</span>
                     <h3>Blueprints</h3>
-                    <p>Rapid gameplay prototyping, systems and logic.</p>
+                    <p data-i18n="blueprintsDescription">Rapid gameplay prototyping, systems and logic.</p>
                 </article>
                 <article class="skill skill-wide">
                     <div class="skill-heading">
-                        <h3>Game Design</h3>
+                    <h3 data-i18n="gameDesign">Game Design</h3>
                         <span class="skill-arrow" aria-hidden="true">↗</span>
                     </div>
-                    <p>Combat, enemy behaviour, gameplay loops and player experience.</p>
+                    <p data-i18n="gameDesignDescription">Combat, enemy behaviour, gameplay loops and player experience.</p>
                 </article>
             </div>
         </section>
 
         <section id="about" class="section about-section backdrop-section" aria-labelledby="about-title">
             <div class="section-heading">
-                <p class="eyebrow">03 <span>/</span> ABOUT</p>
-                <h2 id="about-title">Gameplay first.</h2>
+                <p class="eyebrow">03 <span>/</span> <span data-i18n="about">ABOUT</span></p>
+                <h2 id="about-title" data-i18n="aboutTitle">Gameplay first.</h2>
             </div>
             <div class="about-content">
-                <p class="about-lead">I build gameplay experiences by bringing together systems, enemy behaviour and player interaction.</p>
-                <p>I'm Lopeh, a game developer focused on Gameplay Programming and Game Design. I work primarily in Unreal Engine with C++ and Blueprints, and I enjoy shaping mechanics from their underlying logic through to how they feel in play.</p>
-                <p>On <em>Archangel: Demon Rush</em>, I worked on the enemy AI for three distinct demons, including their Behaviour Trees, Animation Blueprints and enemy Blueprints.</p>
+                <p class="about-lead" data-i18n="aboutLead">I build gameplay experiences by bringing together systems, enemy behaviour and player interaction.</p>
+                <p data-i18n="aboutParagraph1">I'm Lopeh, a game developer focused on Gameplay Programming and Game Design. I work primarily in Unreal Engine with C++ and Blueprints, and I enjoy shaping mechanics from their underlying logic through to how they feel in play.</p>
+                <p data-i18n="aboutParagraph2">On <em>Archangel: Demon Rush</em>, I worked on the enemy AI for three distinct demons, including their Behaviour Trees, Animation Blueprints and enemy Blueprints.</p>
             </div>
             <div class="about-focus">
                 <div class="about-focus-heading">
-                    <p class="eyebrow">FEATURED EXPERIENCE <span>/</span> ARCHANGEL: DEMON RUSH</p>
-                    <h3>Distinct enemies. Distinct combat rhythms.</h3>
+                    <p class="eyebrow"><span data-i18n="featuredExperience">FEATURED EXPERIENCE</span> <span>/</span> ARCHANGEL: DEMON RUSH</p>
+                    <h3 data-i18n="enemyHeading">Distinct enemies. Distinct combat rhythms.</h3>
                 </div>
                 <div class="enemy-grid">
                     <article class="enemy-card">
-                        <span class="skill-index">01 / RANGED ATTACK</span>
+                        <span class="skill-index" data-i18n="rangedAttack">01 / RANGED ATTACK</span>
                         <h4>Larvae Demon</h4>
-                        <p>Spits larvae at the player.</p>
+                        <p data-i18n="larvaeDescription">Spits larvae at the player.</p>
                     </article>
                     <article class="enemy-card">
-                        <span class="skill-index">02 / CHARGE &amp; PROJECTILE</span>
+                        <span class="skill-index" data-i18n="chargeProjectile">02 / CHARGE &amp; PROJECTILE</span>
                         <h4>Colossus Demon</h4>
-                        <p>Throws heads from a distance, follows the player and charges into close combat.</p>
+                        <p data-i18n="colossusDescription">Throws heads from a distance, follows the player and charges into close combat.</p>
                     </article>
                     <article class="enemy-card">
-                        <span class="skill-index">03 / ORBIT &amp; SWING</span>
+                        <span class="skill-index" data-i18n="orbitSwing">03 / ORBIT &amp; SWING</span>
                         <h4>Demon Bat</h4>
-                        <p>Moves in an orbit around the player and attacks with a swing.</p>
+                        <p data-i18n="batDescription">Moves in an orbit around the player and attacks with a swing.</p>
                     </article>
                 </div>
-                <div class="about-tools" aria-label="Areas of implementation">
+                <div class="about-tools" aria-label="Areas of implementation" data-i18n-aria-label="implementationAreas">
                     <span>Behaviour Trees</span>
                     <span>Animation Blueprints</span>
                     <span>Enemy Blueprints</span>
@@ -167,31 +172,31 @@
 
         <section id="content" class="section content-section backdrop-section" aria-labelledby="content-title">
             <div class="section-heading">
-                <p class="eyebrow">04 <span>/</span> PROCESS</p>
-                <h2 id="content-title">Development &amp; Experiments</h2>
+                <p class="eyebrow">04 <span>/</span> <span data-i18n="process">PROCESS</span></p>
+                <h2 id="content-title" data-i18n="contentTitle">Development &amp; Experiments</h2>
             </div>
             <div class="content-panel">
                 <div class="content-copy">
-                    <p class="content-kicker">UNREAL ENGINE <span>/</span> IN PROGRESS</p>
-                    <p class="content-description">I share my development process, Unreal Engine experiments and technical work on YouTube, documenting how gameplay ideas take shape in practice.</p>
-                    <div class="content-topics" aria-label="Topics">
-                        <span>Gameplay development</span>
-                        <span>Unreal experiments</span>
-                        <span>Technical work</span>
+                    <p class="content-kicker"><span data-i18n="unrealEngine">UNREAL ENGINE</span> <span>/</span> <span data-i18n="inProgress">IN PROGRESS</span></p>
+                    <p class="content-description" data-i18n="contentDescription">I share my development process, Unreal Engine experiments and technical work on YouTube, documenting how gameplay ideas take shape in practice.</p>
+                    <div class="content-topics" aria-label="Topics" data-i18n-aria-label="topics">
+                        <span data-i18n="topicGameplay">Gameplay development</span>
+                        <span data-i18n="topicExperiments">Unreal experiments</span>
+                        <span data-i18n="topicTechnical">Technical work</span>
                     </div>
                 </div>
-                <a href="https://www.youtube.com/@LopehUnrealES" target="_blank" rel="noopener noreferrer" class="button secondary">Explore the channel <span aria-hidden="true">↗</span></a>
+                <a href="https://www.youtube.com/@LopehUnrealES" target="_blank" rel="noopener noreferrer" class="button secondary"><span data-i18n="exploreChannel">Explore the channel</span> <span aria-hidden="true">↗</span></a>
             </div>
         </section>
 
         <section id="contact" class="section contact-section backdrop-section" aria-labelledby="contact-title">
             <div class="contact-copy">
-                <p class="eyebrow">05 <span>/</span> CONTACT</p>
-                <h2 id="contact-title">Let's build something.</h2>
-                <p class="contact-description">Have a question about my work or want to talk gameplay development? Get in touch through one of the channels below.</p>
+                <p class="eyebrow">05 <span>/</span> <span data-i18n="contact">CONTACT</span></p>
+                <h2 id="contact-title" data-i18n="contactTitle">Let's build something.</h2>
+                <p class="contact-description" data-i18n="contactDescription">Have a question about my work or want to talk gameplay development? Get in touch through one of the channels below.</p>
             </div>
             <div class="contact-panel">
-                <p class="content-kicker">GET IN TOUCH <span>/</span> LOPEH</p>
+                <p class="content-kicker"><span data-i18n="getInTouch">GET IN TOUCH</span> <span>/</span> LOPEH</p>
                 <div class="contact-links">
                     <a href="https://wa.me/353894146419" target="_blank" rel="noopener noreferrer">WhatsApp Business <span aria-hidden="true">↗</span></a>
                     <a href="https://github.com/lopehdev" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -203,7 +208,12 @@
 
     <footer>
         <p>© 2026 Lopeh</p>
-        <p>Unreal Engine <span>/</span> C++ <span>/</span> Blueprints</p>
+        <p data-i18n="footerSkills">Unreal Engine <span>/</span> C++ <span>/</span> Blueprints</p>
+        <div class="language-switcher footer-language" role="group" aria-label="Language" data-i18n-aria-label="languageLabel">
+            <button type="button" data-set-language="en" aria-label="English" aria-pressed="true"><span class="language-flag" aria-hidden="true">🇬🇧</span><span>EN</span></button>
+            <button type="button" data-set-language="es" aria-label="Español" aria-pressed="false"><span class="language-flag" aria-hidden="true">🇲🇽</span><span>ES</span></button>
+        </div>
     </footer>
+    <script src="language.js" defer></script>
 </body>
 </html>

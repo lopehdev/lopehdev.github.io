@@ -144,6 +144,57 @@ a:focus-visible {
     color: var(--text-primary);
 }
 
+.navbar {
+    gap: clamp(12px, 2.2vw, 28px);
+}
+
+.navbar nav {
+    margin-left: auto;
+    transform: none;
+}
+
+.language-switcher {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 4px;
+}
+
+.language-switcher button {
+    display: inline-flex;
+    min-width: 48px;
+    min-height: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 4px 7px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font: inherit;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+
+.language-switcher button:hover,
+.language-switcher button[aria-pressed="true"] {
+    border-color: var(--border);
+    background: rgba(16, 20, 26, 0.74);
+    color: var(--text-primary);
+}
+
+.language-switcher button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.language-flag {
+    font-size: 14px;
+    line-height: 1;
+}
+
 /* =========================
    TYPOGRAPHY & SHARED ELEMENTS
 ========================= */
@@ -904,7 +955,7 @@ footer span {
 ========================= */
 @media (max-width: 960px) {
     .navbar nav {
-        transform: translateX(10%);
+        transform: none;
     }
 
     .hero-content {
@@ -943,11 +994,25 @@ footer span {
     }
 
     .navbar nav {
-        gap: 17px;
-        transform: translateX(4px);
+        gap: clamp(8px, 2vw, 14px);
     }
 
     .navbar nav a {
+        font-size: clamp(10px, 2.8vw, 12px);
+    }
+
+    .language-switcher {
+        gap: 1px;
+    }
+
+    .language-switcher button {
+        min-width: 40px;
+        gap: 3px;
+        padding: 4px;
+        font-size: 9px;
+    }
+
+    .language-flag {
         font-size: 12px;
     }
 
@@ -1067,17 +1132,37 @@ footer span {
 }
 
 @media (max-width: 430px) {
+    .navbar {
+        display: grid;
+        height: auto;
+        min-height: var(--nav-height);
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 32px 25px;
+        align-content: center;
+        row-gap: 2px;
+        padding: 8px var(--page-gutter);
+    }
+
     .logo {
         font-size: 17px;
         letter-spacing: 0.12em;
     }
 
     .navbar nav {
-        gap: 11px;
+        grid-column: 1 / -1;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+        margin: 0;
+        transform: none;
     }
 
     .navbar nav a {
-        font-size: 11px;
+        font-size: 10px;
+    }
+
+    .language-switcher button {
+        min-width: 36px;
     }
 
     .hero h1 {
@@ -1104,6 +1189,11 @@ footer span {
         align-items: flex-start;
         flex-direction: column;
         gap: 5px;
+    }
+
+    .footer-language {
+        align-self: flex-end;
+        margin-top: 8px;
     }
 }
 

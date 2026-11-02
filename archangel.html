@@ -5,34 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Archangel: Demon Rush | Lopeh</title>
+    <title data-i18n="caseTitle">Archangel: Demon Rush | Lopeh</title>
 
     <meta name="description"
-          content="Gameplay programming and enemy AI work on Archangel: Demon Rush.">
+          content="Gameplay programming and enemy AI work on Archangel: Demon Rush." data-i18n-content="caseMetaDescription">
 
-    <link rel="stylesheet" href="style.css?v=toolkit-layout-5">
+    <link rel="stylesheet" href="style.css?v=toolkit-layout-6">
 </head>
 
 <body>
 
     <header class="navbar">
-        <a href="index.html" class="logo">LOPEH</a>
+        <a href="index.html" class="logo" aria-label="Lopeh home" data-i18n-aria-label="homeLabel">LOPEH</a>
 
-        <nav aria-label="Main navigation">
-            <a href="index.html#projects">Projects</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#content">Content</a>
-            <a href="index.html#contact">Contact</a>
+        <nav aria-label="Main navigation" data-i18n-aria-label="navLabel">
+            <a href="index.html#projects" data-i18n="navProjects">Projects</a>
+            <a href="index.html#about" data-i18n="navAbout">About</a>
+            <a href="index.html#content" data-i18n="navContent">Content</a>
+            <a href="index.html#contact" data-i18n="navContact">Contact</a>
         </nav>
+        <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="languageLabel">
+            <button type="button" data-set-language="en" aria-label="English" aria-pressed="true"><span class="language-flag" aria-hidden="true">🇬🇧</span><span>EN</span></button>
+            <button type="button" data-set-language="es" aria-label="Español" aria-pressed="false"><span class="language-flag" aria-hidden="true">🇲🇽</span><span>ES</span></button>
+        </div>
     </header>
 
     <main>
         <section class="section">
-            <p class="eyebrow">PROJECT CASE STUDY</p>
+            <p class="eyebrow" data-i18n="caseStudyLabel">PROJECT CASE STUDY</p>
 
-            <h1>Archangel: Demon Rush</h1>
+            <h1 data-i18n="projectName">Archangel: Demon Rush</h1>
 
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="caseHeroDescription">
                 Gameplay programming and enemy AI
                 developed with Unreal Engine.
             </p>
@@ -41,47 +45,48 @@
                 <iframe
                     src="https://www.youtube.com/embed/xgYM9En0Grg"
                     title="Archangel: Demon Rush - Enemy Showcase"
+                    data-i18n-title="showcaseVideoTitle"
                     allowfullscreen>
                 </iframe>
             </div>
 
             <div class="case-study-content">
-                <p class="eyebrow">MY CONTRIBUTIONS</p>
+                <p class="eyebrow" data-i18n="myContributions">MY CONTRIBUTIONS</p>
 
-                <h2>Enemy AI & Behaviour</h2>
+                <h2 data-i18n="enemyBehaviourTitle">Enemy AI &amp; Behaviour</h2>
 
-                <p>
+                <p data-i18n="enemyBehaviourIntro">
                     I worked on the enemy AI, animation and gameplay
                     Blueprints for three demon types, shaping their
                     movement, attacks and behaviour in combat.
                 </p>
 
-                <h2>Larvae Demon</h2>
+                <h2 data-i18n="larvaeName">Larvae Demon</h2>
 
-                <p>
+                <p data-i18n="larvaeCaseDescription">
                     A ranged enemy that spits larvae at the player.
                     I worked on the behaviour and animation setup that
                     support this attack.
                 </p>
 
-                <h2>Colossus Demon</h2>
+                <h2 data-i18n="colossusName">Colossus Demon</h2>
 
-                <p>
+                <p data-i18n="colossusCaseDescription">
                     The Colossus throws heads when the player is far
                     away, pursues them at closer range and attacks with
                     charging moves.
                 </p>
 
-                <h2>Demon Bat</h2>
+                <h2 data-i18n="batName">Demon Bat</h2>
 
-                <p>
+                <p data-i18n="batCaseDescription">
                     The Demon Bat moves around the player in an orbit
                     and attacks with a swinging movement.
                 </p>
 
-                <h2>Animation & Blueprint Implementation</h2>
+                <h2 data-i18n="animationImplementation">Animation &amp; Blueprint Implementation</h2>
 
-                <p>
+                <p data-i18n="animationImplementationDescription">
                     Across all three enemies, I worked with Animation
                     Blueprints, Behaviour Trees and gameplay Blueprints
                     to implement their behaviours and attacks.
@@ -90,11 +95,11 @@
 
 <div class="technical-section">
 
-    <p class="eyebrow">TECHNICAL BREAKDOWN</p>
+    <p class="eyebrow" data-i18n="technicalBreakdown">TECHNICAL BREAKDOWN</p>
 
-    <h2>Enemy AI & Gameplay Systems</h2>
+    <h2 data-i18n="technicalTitle">Enemy AI &amp; Gameplay Systems</h2>
 
-    <p class="technical-intro">
+    <p class="technical-intro" data-i18n="technicalIntro">
         A closer look at selected enemy AI and movement systems
         implemented in Unreal Engine.
     </p>
@@ -104,11 +109,11 @@
         <article class="technical-card">
             <img
                 src="images/colossus-behavior-tree.png"
-                alt="Colossus enemy AI Behavior Tree in Unreal Engine">
+                alt="Colossus enemy AI Behavior Tree in Unreal Engine" data-i18n-alt="colossusImageAlt">
 
             <div class="technical-card-content">
-                <h3>Colossus AI — Behavior Tree</h3>
-                <p>
+                <h3 data-i18n="colossusTreeTitle">Colossus AI — Behavior Tree</h3>
+                <p data-i18n="colossusTreeDescription">
                     A Behavior Tree organizes enemy decision-making,
                     including player pursuit, target selection and
                     charge attack behaviour.
@@ -119,11 +124,11 @@
         <article class="technical-card">
             <img
                 src="images/flying-enemy-orbit.png"
-                alt="Blueprint graph calculating Demon Bat orbital movement">
+                alt="Blueprint graph calculating Demon Bat orbital movement" data-i18n-alt="batOrbitImageAlt">
 
             <div class="technical-card-content">
-                <h3>Demon Bat — Orbital Movement</h3>
-                <p>
+                <h3 data-i18n="batOrbitTitle">Demon Bat — Orbital Movement</h3>
+                <p data-i18n="batOrbitDescription">
                     Blueprint logic calculates an orbital offset
                     using trigonometric functions, radius and height
                     to determine the enemy's desired position.
@@ -134,11 +139,11 @@
         <article class="technical-card">
             <img
                 src="images/flying-enemy-attack.png"
-                alt="Blueprint graph updating the Demon Bat swing attack">
+                alt="Blueprint graph updating the Demon Bat swing attack" data-i18n-alt="batAttackImageAlt">
 
             <div class="technical-card-content">
-                <h3>Demon Bat — Swing Attack</h3>
-                <p>
+                <h3 data-i18n="batAttackTitle">Demon Bat — Swing Attack</h3>
+                <p data-i18n="batAttackDescription">
                     The attack movement updates the swing trajectory
                     over time, interpolating between positions to
                     control the enemy's movement during the attack.
@@ -149,11 +154,11 @@
         <article class="technical-card">
             <img
                 src="images/enemy-blueprint.png"
-                alt="Enemy character Blueprint and components in Unreal Engine">
+                alt="Enemy character Blueprint and components in Unreal Engine" data-i18n-alt="enemyBlueprintImageAlt">
 
             <div class="technical-card-content">
-                <h3>Enemy Implementation</h3>
-                <p>
+                <h3 data-i18n="enemyImplementationTitle">Enemy Implementation</h3>
+                <p data-i18n="enemyImplementationDescription">
                     The enemy Blueprint brings together character
                     components, detection logic and gameplay
                     functionality.
@@ -168,16 +173,21 @@
             
             
             <a href="index.html#projects" class="project-link">
-                ← Back to projects
+                <span data-i18n="backToProjects">← Back to projects</span>
             </a>
         </section>
     </main>
 
     <footer>
         <p>© 2026 Lopeh</p>
-        <p>Unreal Engine · Gameplay Programming</p>
+        <p data-i18n="caseFooter">Unreal Engine · Gameplay Programming</p>
+        <div class="language-switcher footer-language" role="group" aria-label="Language" data-i18n-aria-label="languageLabel">
+            <button type="button" data-set-language="en" aria-label="English" aria-pressed="true"><span class="language-flag" aria-hidden="true">🇬🇧</span><span>EN</span></button>
+            <button type="button" data-set-language="es" aria-label="Español" aria-pressed="false"><span class="language-flag" aria-hidden="true">🇲🇽</span><span>ES</span></button>
+        </div>
     </footer>
 
+    <script src="language.js" defer></script>
 </body>
 </html>
 
